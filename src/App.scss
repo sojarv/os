@@ -1,0 +1,155 @@
+body {
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+textarea {
+    padding: 5px;
+    margin: auto;
+    width: 50%;
+    display: block;
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 90%;
+    max-height: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#word {
+    background: lightgray;
+    padding: 10px;
+    height: 100vh;
+}
+
+#word-inptus {
+    margin: auto;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: lightgray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px black solid;
+}
+
+.nav-items {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px
+}
+
+.folders {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border: black 1px solid;
+    min-height: 300px;
+    background-color: white;
+}
+
+a,
+p {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.folders li {
+    margin-top: 10px;
+    list-style-type: none;
+    align-items: center;
+}
+
+svg {
+    margin-right: 5px;
+}
+
+#create-folder {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    svg {
+        height: 35px;
+        width: auto;
+    }
+}
+
+#newFolder {
+    font-size: 16px;
+}
+
+#feed {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border: black 1px solid;
+    min-height: 300px;
+    background-color: white;
+    @media (max-width: 1200px) {
+        grid-template-columns: auto auto;
+        width: 70%;
+    }
+    @media (max-width: 600px) {
+        grid-template-columns: auto;
+        width: 70%;
+    }
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border: black 1px solid;
+    min-height: 300px;
+    background-color: white;
+    @media (max-width: 1700px) {
+        grid-template-columns: auto auto auto auto;
+    }
+    @media (max-width: 1315px) {
+        grid-template-columns: auto auto auto;
+    }
+    @media (max-width: 990px) {
+        grid-template-columns: auto auto;
+    }
+    @media (max-width: 640px) {
+        width: 70%
+    }
+}
+
+.feed-item {
+    margin: 0 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.body {
+    font-size: 16px;
+}
+
+#auth {
+    top: 0;
+    background-color: black;
+    width: 100%;
+}
